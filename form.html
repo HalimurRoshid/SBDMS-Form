@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SBDMS Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h2>Registration</h2>
+
+      <div class="flex">
+        <div class="input-box w-48">
+          <input type="text" required />
+          <label for="">First &nbsp; Name &nbsp;<span>*</span></label>
+        </div>
+        <div class="input-box w-48">
+          <input type="text" required />
+          <label for="">Last &nbsp; Name &nbsp;<span>*</span></label>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="input-box w-48">
+          <input type="email" required />
+          <label for=""
+            >E-mail &nbsp; Address &nbsp;<span class="red">*</span></label
+          >
+        </div>
+        <div class="input-box w-48">
+          <input type="tel" required />
+          <label for="">Mobile &nbsp;<span>*</span></label>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="inputCheck w-32">
+          <label for="">Date Of Birth</label>
+          <input type="date" class="white" required max="2023-12-31" />
+        </div>
+        <div class="inputCheck w-32">
+          <label for="">Age <span>*</span></label>
+          <input type="number" required />
+        </div>
+        <div class="inputCheck w-32">
+          <label for="">Blod Group <span>*</span></label>
+          <select id="" class="option">
+            <option value="Default">Choose Your Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+        </div>
+      </div>
+      <div class="checkBox mt-4">
+        <label for="" class="white">Gender <span>*</span></label>
+      </div>
+      <div class="d-flex justify-around checkBox">
+        <input type="radio" name="gender" required /><span class="white mx-2"
+          >Male</span
+        >
+        <input type="radio" name="gender" required /><span class="white mx-2"
+          >Female</span
+        >
+        <input type="radio" name="gender" required /><span class="white mx-2"
+          >Transgender</span
+        >
+      </div>
+      <div class="flex">
+        <div>
+          <div class="checkBox mt-3">
+            <label for="" class="white"
+              >Are you interested in blood donating? <span>*</span></label
+            >
+          </div>
+          <div class="d-flex justify-around checkBox">
+            <input type="radio" name="option" required /><span
+              class="white mx-2"
+              >Yes</span
+            >
+            <input type="radio" name="option" required /><span
+              class="white mx-2"
+              >No</span
+            >
+          </div>
+        </div>
+        <div class="">
+          <div class="checkBox mt-3">
+            <label for="" class="white"
+              >Are you donating first time? <span>*</span></label
+            >
+          </div>
+          <div class="d-flex justify-around checkBox">
+            <input type="radio" name="option" required /><span
+              class="white mx-2"
+              >Yes</span
+            >
+            <input type="radio" name="option" required /><span
+              class="white mx-2"
+              >No</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="inputCheck mt-4">
+        <label for="">Address <span>*</span></label>
+      </div>
+      <div class="flex">
+        <div class="w-32 inputCheck">
+          <select id="" class="option">
+            <option value="Default">Select District</option>
+            <option value="DHAKA">DHAKA</option>
+            <option value="RAJSHAHI">RAJSHAHI</option>
+            <option value="KHULNA">KHULNA</option>
+            <option value="RANGPUR">RANGPUR</option>
+            <option value="CHATTOGRAM">CHATTOGRAM</option>
+            <option value="BARISHAL">BARISHAL</option>
+            <option value="MYMENSINGH">MYMENSINGH</option>
+            <option value="SYLHET">SYLHET</option>
+          </select>
+        </div>
+        <div class="inputCheck w-32">
+          <select id="" class="option">
+            <option value="Default">Select District</option>
+            <option value="DHAKA">DHAKA</option>
+            <option value="RAJSHAHI">RAJSHAHI</option>
+            <option value="KHULNA">KHULNA</option>
+            <option value="RANGPUR">RANGPUR</option>
+            <option value="CHATTOGRAM">CHATTOGRAM</option>
+            <option value="BARISHAL">BARISHAL</option>
+            <option value="MYMENSINGH">MYMENSINGH</option>
+            <option value="SYLHET">SYLHET</option>
+          </select>
+        </div>
+        <div class="inputCheck w-32">
+          <select id="" class="option">
+            <option value="Default">Select Thana</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="text-center my-5">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <script>
+      let labels = document.querySelectorAll("label");
+      labels.forEach((label) => {
+        label.innerHTML = label.innerText
+          .split("")
+          .map(
+            (letter, i) =>
+              `<span style="transition-delay:${i * 50}ms">${letter}</span>`
+          )
+          .join("");
+      });
+    </script>
+  </body>
+</html>

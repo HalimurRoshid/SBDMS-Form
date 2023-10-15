@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --color: #ff4500;
+}
+
+.white {
+  color: #fff;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4%;
+}
+.w-32 {
+  width: 32%;
+}
+.w-48 {
+  width: 48%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1c2600;
+}
+form {
+  background: #29313c;
+  padding: 60px 80px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+}
+form h2 {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  margin-bottom: 50px;
+}
+.input-box {
+  position: relative;
+  width: 30vw;
+  margin-bottom: 40px;
+}
+.input-box input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #999;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  letter-spacing: 0.15em;
+}
+.input-box label {
+  position: absolute;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: #ffffff;
+}
+.inputCheck input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #999;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  letter-spacing: 0.15em;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+.inputCheck label {
+  color: #fff;
+  padding: 10px 0;
+  pointer-events: none;
+  display: block;
+  text-align: start;
+}
+.checkBox {
+  position: relative;
+  width: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  letter-spacing: 0.15em;
+}
+.checkBox label {
+  color: #fff;
+  padding: 10px 0;
+  pointer-events: none;
+  display: block;
+  text-align: start;
+}
+.input-box label span {
+  position: relative;
+  display: inline-flex;
+  letter-spacing: 0.05em;
+  transition: 0.2s ease-in-out;
+}
+.input-box input:focus ~ label span,
+.input-box input:valid ~ label span,
+.input-box input:active ~ label span {
+  color: var(--color);
+  letter-spacing: 0.5em;
+  transform: translateY(-25px);
+}
+.input-box input:focus,
+.input-box input:valid {
+  border-bottom: 2px solid var(--color);
+}
+input[type="submit"] {
+  width: 45vh;
+  background-color: var(--color) !important;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  color: #1c2630;
+  font-weight: 600;
+  font-size: 1.15em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  letter-spacing: 0.35em;
+}
+form p {
+  color: #fff;
+  text-transform: uppercase;
+}
+form p a {
+  color: var(--color);
+  font-weight: 500;
+  text-decoration: none;
+}
+.option {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+.option option {
+  margin-bottom: 10px;
+  background-color: #1c2630;
+  outline: none;
+}
