@@ -39,7 +39,7 @@
       <div class="flex">
         <div class="inputCheck w-32">
           <label for="">Date Of Birth &nbsp;<span>*</span></label>
-          <input type="date" class="white" required max="2023-12-31" />
+          <input type="date" class="white" required min ="1950-01-01" max="2023-12-31" />
         </div>
         <div class="inputCheck w-32">
           <label for="">Age <span>*</span></label>
@@ -48,7 +48,7 @@
         <div class="inputCheck w-32">
           <label for="">Blod Group <span>*</span></label>
           <select id="" class="option">
-            <option value="Default">Choose Your Blood Group</option>
+            <option value="Default">Choose Blood Group</option>
             <option value="A+">A+</option>
             <option value="A-">A-</option>
             <option value="B+">B+</option>
@@ -74,7 +74,9 @@
           >Transgender</span
         >
       </div>
-      <div class="flex">
+
+
+
         <div>
           <div class="checkBox mt-3">
             <label for="" class="white"
@@ -99,24 +101,28 @@
             >
           </div>
           <div class="d-flex justify-around checkBox">
-            <input type="radio" name="option" required /><span
+            <input type="radio" name="option2" required /><span
               class="white mx-2"
               >Yes</span
             >
-            <input type="radio" name="option" required /><span
+            <input type="radio" name="option2" required /><span
               class="white mx-2"
               >No</span
             >
           </div>
         </div>
-      </div>
+        <div class="inputCheck ">
+          <label for="">Last date of Donation &nbsp;<span>*</span></label>
+          <input type="date" class="white" required max="2023-12-31" />
+        </div>
+ 
       <div class="inputCheck mt-4">
         <label for="">Address <span>*</span></label>
       </div>
       <div class="flex">
         <div class="w-32 inputCheck">
           <select id="" class="option">
-            <option value="Default">Select District</option>
+            <option value="Default">Select Division</option>
             <option value="DHAKA">DHAKA</option>
             <option value="RAJSHAHI">RAJSHAHI</option>
             <option value="KHULNA">KHULNA</option>
@@ -170,7 +176,8 @@
           <option value="Service">Service</option>
           <option value="Businessman">Businessman</option>
           <option value="Day Labour">Day Labour</option>
-          <option value="Unemployment">Unemployment</option>
+
+          <option value="Others">Others</option>
         </select>
       </div>
       <div class="inputCheck mt-4">
@@ -189,6 +196,40 @@
         <input type="text" required />
         <label for="">Referral &nbsp; ID &nbsp;<span>*</span></label>
       </div>
+
+      <div>
+        <div class="checkBox mt-3">
+          <label for="" class="white"
+            >Are you interested to work with us? * <span>*</span></label
+          >
+        </div>
+        <div class="d-flex justify-around checkBox">
+          <input type="radio" name="option3" required /><span
+            class="white mx-2"
+            >Yes</span
+          >
+          <input type="radio" name="option3" required /><span
+            class="white mx-2"
+            >No</span
+          >
+        </div>
+      </div>        <div>
+        <div class="checkBox mt-3">
+          <label for="" class="white"
+            >Are you connected any blood donor group? <span>*</span></label
+          >
+        </div>
+        <div class="d-flex justify-around checkBox">
+          <input type="radio" name="option4" required /><span
+            class="white mx-2"
+            >Yes</span
+          >
+          <input type="radio" name="option4" required /><span
+            class="white mx-2"
+            >No</span
+          >
+        </div>
+      </div>
       <div class="checkBox text-start mt-3">
         <input type="checkbox" id="" name="" value="Live Address" /><span>
           I accept all the
@@ -197,7 +238,6 @@
           >.
         </span>
       </div>
-
       <div class="text-center mt-4"><input type="submit" value="submit" /></div>
     </form>
     <script>
